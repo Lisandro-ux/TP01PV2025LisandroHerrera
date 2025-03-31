@@ -1,0 +1,18 @@
+*{ background-color: rgb(238, 208, 162);}
+img{
+    width: 350px;
+    border-radius: 50px; border: 1px solid; border-color: black;
+}
+h1,h2{
+    text-decoration: underline;
+}
+a{
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid;
+}
+#ifi{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

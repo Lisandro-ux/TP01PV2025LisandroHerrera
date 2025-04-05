@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/Css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1>Contatos</h1>
-        <section>
-            <nav>
-                <h2>Contenido</h2>
-                <a href="index.html">Inicio</a>
-                <a href="museo.html">Museo</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </section>
-    <form action="" method="phost">
-        <div>
-            <label for="iname">Nombre:</label>
-            <input type="text" id="iname" name="name">
-
-            <label for="isurname">Apellido:</label>
-            <input type="text" id="isurname" name="surname">
-            
-            <label for="iemail">Correo:</label>
-            <input type="email" id="iemail" name="email">
-            
-            <label for="itel">Telefono:</label>
-            <input type="tel" id="itel" name="phone">
-
-            <label for="itext">Comentario:</label>
-            <input type="text" id="itext" name="coment">
-
-            <input type="submit" value="Enviar">
-
-            <input type="reset" value="Resetear">
+<body class="bander">
+    <h1>Contacto</h1>
+    <nav class="indi">
+        <div class="item">
+            <a href="museo.html">Museo</a>
         </div>
-    </form>
+        <div class="item">
+            <a href="index.html">Inicio</a>
+        </div>
+    </nav>
+    <div class="form">
+        <form id="coment-mu">
+            <label for="iname">Nombre:</label>
+            <input type="text" id="iname" name="name" required>
+            <label for="isurname">Apellido:</label>
+            <input type="text" id="isurname" name="surname" required>
+            <label for="iemail">Correo:</label>
+            <input type="email" id="iemail" name="email" required>
+            <label for="itel">Telefono:</label>
+            <input type="tel" id="itel" name="phone" required>
+            <label for="itext">Comentario:</label>
+            <input type="text" id="itext" name="coment" required>
+            <input type="submit" value="Enviar" >
+            <input type="reset" value="Resetear">
+        </form> 
+    </div>
+
+    <script>
+        function enviarformulario(){
+            event .preventDefault();
+            var apellido = document.getElementById("isurname").value;
+            var nombre = document.getElementById("iname").value;
+            var email = domuent.getElementById("iemail").value;
+            var telefono = document.getElementById("itel").value;
+            console.log("Apellido",isurname);
+            console.log("Nombre",iname);
+            console.log("Email",iemail);
+            console.log("Telefono",itel);
+            alert("Apellido: "+isurname+"Nombre: "+iname+"Email: "+iemail+" y Telefono: "+itel);
+        }
+    </script>
 </body>
 </html>
